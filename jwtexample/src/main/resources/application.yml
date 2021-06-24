@@ -1,0 +1,15 @@
+spring:
+  profiles:
+    active: dev
+
+server:
+  port: 8080
+  servlet:
+    context-path: /example/api
+
+# App Properties
+example:
+  app:
+    jwtSecret: d16a249613a9969aca19846263698f0223eeccf0e64bd62284bac665671fcb17
+    jwtExpirationMs: 3600000
+    jwtRefreshExpirationMs: 864000000
